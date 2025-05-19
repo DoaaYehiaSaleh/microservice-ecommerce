@@ -48,8 +48,10 @@ Key capabilities include:
 | Keycloak            | Authentication & authorization        |
 | MongoDB             | NoSQL document database                |
 | PostgreSQL          | Relational database                    |
+| Flyway              | Database schema versioning & migration|
 | Eureka Server       | Service registry and discovery        |
 | Docker              | Containerization and deployment       |
+
 
 ---
 
@@ -147,6 +149,7 @@ Working on **microservice-ecommerce** helps you master:
 - Implementing distributed tracing and observability with Zipkin  
 - Secure authentication and authorization using Keycloak  
 - Containerized application development and deployment using Docker  
+- Database migration with flyway
 
 ---
 
@@ -159,39 +162,42 @@ Here are some highlights of the working microservice-ecommerce system in action,
 All core microservices are running smoothly in Docker containers, including Customer, Product, Order, Payment, Notification, and others.
 
 ### MongoDB Customer Data in Mongo Express  
-![MongoDB Customer Data](success-tests/Screenshot 2025-05-19 020727.png)  
+![MongoDB Customer Data](success-tests/mongo.png)  
 Customer documents with embedded address details stored and retrieved from MongoDB.
 
 ### PostgreSQL Product Table in pgAdmin  
-![PostgreSQL Products](success-tests/Screenshot 2025-05-19 020741.png)  
+![PostgreSQL Products](success-tests/pgadmin.png)  
 Relational product data displayed in PostgreSQL with details such as name, price, quantity, and category.
 
 ### API Requests Tested in Postman  
 - **Create Customer**  
-![Postman Create Customer](success-tests/Screenshot 2025-05-19 025835.png)  
+![Postman Create Customer](success-tests/createcustomer.png)  
 Successfully creating a customer with JSON payload.  
 - **Get Products**  
-![Postman Get Products](success-tests/Screenshot 2025-05-19 030030.png)  
+![Postman Get Products](success-tests/getorders.png)  
 Fetching product listings via GET request, returning accurate data.
 
 ### Order Creation & Payment Confirmation  
 - **Create Order**  
-![Postman Create Order](success-tests/Screenshot 2025-05-19 030038.png)  
+![Postman Create Order](success-tests/createorder.png)  
 Order created successfully with valid product references and quantities.  
 - **Email Notifications Received**  
-![MailDev Payment Email](success-tests/Screenshot 2025-05-19 032311.png)  
-Confirmation emails for payment processed and order placed received in the MailDev inbox.
+![MailDev Payment Email](success-tests/paymentconfirmation.png)  
+Confirmation emails for payment processed received in the MailDev inbox.
+
+![MailDev order Email](success-tests/orderconfirmation.png)  
+Confirmation emails for order placed received in the MailDev inbox.
 
 ### Service Discovery via Eureka  
-![Eureka Dashboard](success-tests/Screenshot 2025-05-19 034038.png)  
+![Eureka Dashboard](success-tests/discovery.png)  
 All microservices dynamically registered and available through Eureka service registry.
 
 ### Distributed Tracing with Zipkin  
-![Zipkin Trace](success-tests/Screenshot 2025-05-19 034505.png)  
+![Zipkin Trace](success-tests/zipkin.png)  
 Request tracing across the gateway and customer service for end-to-end observability.
 
 ### Applied Security with Keycloak  
-![Keycloak](success-tests/Screenshot 2025-05-19 040737.png)  
+![Keycloak](success-tests/keycloak.png)  
 Secure authentication and role-based authorization implemented using Keycloak.
 ---
 
