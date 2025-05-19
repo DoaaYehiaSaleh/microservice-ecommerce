@@ -155,7 +155,7 @@ Working on **microservice-ecommerce** helps you master:
 Here are some highlights of the working microservice-ecommerce system in action, showing container status, database contents, API requests, and monitoring:
 
 ### Docker Containers Running Successfully  
-![Docker Containers](success-tests/Screenshot 2025-05-19 020004.png)  
+![Docker Containers](success-tests/docker.png)  
 All core microservices are running smoothly in Docker containers, including Customer, Product, Order, Payment, Notification, and others.
 
 ### MongoDB Customer Data in Mongo Express  
